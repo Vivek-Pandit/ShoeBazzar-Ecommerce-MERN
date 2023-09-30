@@ -11,7 +11,7 @@ app.use(express.static("public"));
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
-  async create(request, response, ctx) {
+  async create(ctx) {
     const { products } = ctx.request.body;
     try {
       const lineItems = await Promise.all(
