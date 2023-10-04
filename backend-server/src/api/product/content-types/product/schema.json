@@ -16,7 +16,7 @@
       "type": "string"
     },
     "desc": {
-      "type": "string"
+      "type": "text"
     },
     "price": {
       "type": "decimal"

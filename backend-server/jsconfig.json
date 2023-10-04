@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    // "moduleResolution": "NodeNext",
+    "module": "commonjs",
     "target": "ES2021",
     "checkJs": true,
     "allowJs": true

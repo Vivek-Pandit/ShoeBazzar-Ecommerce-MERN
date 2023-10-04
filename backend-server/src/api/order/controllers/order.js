@@ -1,7 +1,9 @@
 ("use strict");
-
-const stripe = require("stripe")(process.env.STRIPE_KEY);
 const express = require("express");
+const Stripe = require("stripe");
+// @ts-ignore
+const stripe = Stripe(process.env.STRIPE_KEY);
+
 const app = express();
 app.use(express.static("public"));
 /**
