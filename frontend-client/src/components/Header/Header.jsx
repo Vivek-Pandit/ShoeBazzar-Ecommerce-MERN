@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { TbSearch } from "react-icons/tb";
 import { CgShoppingCart } from "react-icons/cg";
 import { AiOutlineHeart } from "react-icons/ai";
-import { FiUser } from "react-icons/fi";
 import "./Header.scss";
 import Search from "./Search/Search";
 import { Context } from "../../utils/context";
@@ -46,10 +45,6 @@ const Header = () => {
               <CgShoppingCart />
               {!!cartCount && <span>{cartCount}</span>}
             </span>
-            {/* <span className="user-icon" onClick={() => setShowCart(true)}>
-              <FiUser />
-              {!!cartCount && <span>{cartCount}</span>}
-            </span> */}
           </div>
         </div>
       </header>
